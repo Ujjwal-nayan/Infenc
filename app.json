@@ -1,0 +1,32 @@
+{
+    "name": "Infenc",
+    "description": "A Telegram Video Encoder.",
+    "logo": "https://telegra.ph/file/5cfa9e08f6d1d635d0e28.jpg",
+    "keywords": ["Telegram","python", "Video","Compressor","Encoder"],
+    "repository": "https://github.com/Ujjawalnayan/Infenc",
+    "success_url": "",
+    "stack": "container",
+    "env": {
+        "APP_ID": {
+            "description": "You api id get it from my.telegram.org or @apiScrapperRoBot",
+            "value": "8491195"
+        },
+        "API_HASH": {
+            "description": "You api hash get it from my.telegram.org or @apiScrapperRoBot.",
+            "value": "dbb31515e4b5ee789dcf5ae28c5c17a9"
+        },
+        "BOT_TOKEN": {
+            "description": "Make a bot from @BotFather and enter it's api token",
+            "value": ""
+        },
+        "OWNER": {
+            "description": "Put ids of user which can access the bot e.g 123456789",
+            "value": "2026439534"
+        },
+        "THUMBNAIL": {
+            "description": "Put Link of any picture.",
+            "value": "https://telegra.ph/file/5cfa9e08f6d1d635d0e28.jpg",
+            "required": false
+        }
+    }
+}
