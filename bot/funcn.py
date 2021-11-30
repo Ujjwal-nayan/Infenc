@@ -82,7 +82,7 @@ async def progress(current, total, event, start, type_of_ps, file=None):
         )
         tmp = (
             progress_str
-            + "**✅ Progress:** {0} \n\n**📁 Total Size:** {1}\n\n**🚀 Speed:** {2}/s\n\n**⏰ Time Left:** {3}\n".format(
+            + "**✅ Pʀᴏɢʀᴇꜱꜱ :** {0} \n\n**📁 ᴛᴏᴛᴀʟ ꜱɪᴢᴇ :** {1}\n\n**🚀 ꜱᴘᴇᴇᴅ :** {2}/s\n\n**⏰ ＥＴＡ :** {3}\n".format(
                 hbs(current),
                 hbs(total),
                 hbs(speed),
@@ -186,7 +186,7 @@ async def skip(e):
 async def renew(e):
     if str(e.sender_id) not in OWNER and event.sender_id !=DEV:
         return
-    await e.reply("**Cleared Queued, Working Files and Cached Downloads!**")
+    await e.reply("**𝙲𝚕𝚎𝚊𝚛𝚎𝚍 𝚀𝚞𝚎𝚞𝚎𝚍, 𝙾𝚗𝚐𝚘𝚒𝚗𝚐 𝙵𝚒𝚕𝚎𝚜 𝚊𝚗𝚍 𝙲𝚊𝚌𝚑𝚎𝚍 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚜!**")
     WORKING.clear()
     QUEUE.clear()
     os.system("rm -rf downloads/*")
@@ -206,14 +206,14 @@ async def coding(e):
     ffmpeg = e.text.split(" ", maxsplit=1)[1]
     ffmpegcode.clear()
     ffmpegcode.insert(0, f"""{ffmpeg}""")
-    await e.reply(f"**Changed FFMPEG code to**\n\n`{ffmpeg}`")
+    await e.reply(f"**𝙲𝚑𝚊𝚗𝚐𝚎𝚍 𝙵𝙵𝙼𝙿𝙴𝙶 𝚌𝚘𝚍𝚎 𝚝𝚘**\n\n`{ffmpeg}`")
     return
 
 
 async def clearqueue(e):
     if str(e.sender_id) not in OWNER and event.sender_id !=DEV:
         return
-    await e.reply("**Cleared Queued Files!**")
+    await e.reply("**𝙲𝚕𝚎𝚊𝚛𝚎𝚍 𝚀𝚞𝚎𝚞𝚎𝚍 𝙵𝚒𝚕𝚎𝚜!**")
     QUEUE.clear()
     return
 
@@ -226,7 +226,7 @@ async def fast_download(e, download_url, filename=None):
                     t,
                     e,
                     time.time(),
-                    f"**📥 Downloading video from {download_url}**",
+                    f"**📥 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚟𝚒𝚍𝚎𝚘 𝚏𝚛𝚘𝚖 {download_url}**",
                 )
             ),
         )

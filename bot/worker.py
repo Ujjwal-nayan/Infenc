@@ -14,12 +14,12 @@ async def stats(e):
         ot = hbs(int(Path(out).stat().st_size))
         ov = hbs(int(Path(dl).stat().st_size))
         processing_file_name = dl.replace(f"downloads/", "").replace(f"_", " ")
-        ans = f"Processing Media:\n{processing_file_name}\n\nDownloaded:\n{ov}\n\nCompressed:\n{ot}"
+        ans = f"𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝙼𝚎𝚍𝚒𝚊 :\n{processing_file_name}\n\n𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚎𝚍 :\n{ov}\n\n𝙲𝚘𝚖𝚙𝚛𝚎𝚜𝚜𝚎𝚍 :\n{ot}"
         await e.answer(ans, cache_time=0, alert=True)
     except Exception as er:
         LOGS.info(er)
         await e.answer(
-            "Someting Went Wrong.\nSend Media Again.", cache_time=0, alert=True
+            "**ＲＩＰ**", cache_time=0, alert=True
         )
 
 
@@ -104,7 +104,7 @@ async def dl_link(event):
     xxx = ts(int((eees - ees).seconds) * 1000)
     a1 = await info(dl, xxx)
     a2 = await info(out, xxx)
-    dk = f"𝑰𝒏𝒑𝒖𝒕 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆: {hbs(org)}\n𝑶𝒖𝒕𝒑𝒖𝒕 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆: {hbs(com)}\n𝑪𝒐𝒎𝒑𝒓𝒆𝒔𝒔𝒊𝒐𝒏 𝑹𝒂𝒕𝒊𝒐: {per}\n\n<b>🄼🄴🄳🄸🄰🄸🄽🄵🄾:</b> <a href='{a1}'>Before</a>/<a href='{a2}'>After</a>\n\n𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {x}\n𝐸𝑛𝑐𝑜𝑑𝑒𝑑 𝑖𝑛 {xx}\n𝑈𝑝𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {xxx}"
+    dk = f"𝐈𝐧𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞 : {hbs(org)}\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞 : {hbs(com)}\n𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 𝐑𝐚𝐭𝐢𝐨 : {per}\n\n<b>𝕄𝕖𝕕𝕚𝕒𝕚𝕟𝕗𝕠 :</b> <a href='{a1}'>Before</a>/<a href='{a2}'>After</a>\n\n𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {x}\n𝐸𝑛𝑐𝑜𝑑𝑒𝑑 𝑖𝑛 {xx}\n𝑈𝑝𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {xxx}"
     ds = await e.client.send_file(
         e.chat_id, file=ok, force_document=True, caption=dk, link_preview=False, thumb=thum, parse_mode="html"
     )
@@ -241,7 +241,7 @@ async def encod(event):
         xxx = ts(int((eees - ees).seconds) * 1000)
         a1 = await info(dl, e)
         a2 = await info(out, e)
-        dk = f"𝑰𝒏𝒑𝒖𝒕 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆: {hbs(org)}\n𝑶𝒖𝒕𝒑𝒖𝒕 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆: {hbs(com)}\n𝑪𝒐𝒎𝒑𝒓𝒆𝒔𝒔𝒊𝒐𝒏 𝑹𝒂𝒕𝒊𝒐: {per}\n\n<b>🄼🄴🄳🄸🄰🄸🄽🄵🄾:</b> <a href='{a1}'>Before</a>/<a href='{a2}'>After</a>\n\n𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {x}\n𝐸𝑛𝑐𝑜𝑑𝑒𝑑 𝑖𝑛 {xx}\n𝑈𝑝𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {xxx}"
+        dk = f"𝐈𝐧𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞 : {hbs(org)}\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞 : {hbs(com)}\n𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 𝐑𝐚𝐭𝐢𝐨 : {per}\n\n<b>𝕄𝕖𝕕𝕚𝕒𝕚𝕟𝕗𝕠 :</b> <a href='{a1}'>Before</a>/<a href='{a2}'>After</a>\n\n𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {x}\n𝐸𝑛𝑐𝑜𝑑𝑒𝑑 𝑖𝑛 {xx}\n𝑈𝑝𝑙𝑜𝑎𝑑𝑒𝑑 𝑖𝑛 {xxx}"
         ds = await e.client.send_file(
             e.chat_id, file=ok, force_document=True, caption=dk, link_preview=False, thumb=thum, parse_mode="html"
         )

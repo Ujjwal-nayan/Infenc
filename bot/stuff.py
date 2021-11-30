@@ -18,7 +18,7 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"**Send me the video to compress.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}**",
+        f"**𝚂𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚟𝚒𝚍𝚎𝚘 𝚝𝚘 𝚌𝚘𝚖𝚙𝚛𝚎𝚜𝚜.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}**",
         buttons=[
             [Button.inline("HELP", data="ihelp")],
         ],
@@ -47,11 +47,11 @@ async def un(event):
 
 async def help(event):
     await event.reply(
-        f"""**To check current ffmpeg command you can use.**\n\n`/eval print(ffmpegcode[0])`\n\n**You can change your ffmpeg code by executing following commands.**\n\n**➩** `/setcode -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1`\n\n**Do /cmds For More**"""
+        f"""**𝚃𝚘 𝚌𝚑𝚎𝚌𝚔 𝚌𝚞𝚛𝚛𝚎𝚗𝚝 𝚏𝚏𝚖𝚙𝚎𝚐 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎.**\n\n`/eval print(ffmpegcode[0])`\n\n**𝚈𝚘𝚞 𝚌𝚊𝚗 𝚌𝚑𝚊𝚗𝚐𝚎 𝚢𝚘𝚞𝚛 𝚏𝚏𝚖𝚙𝚎𝚐 𝚌𝚘𝚍𝚎 𝚋𝚢 𝚎𝚡𝚎𝚌𝚞𝚝𝚒𝚗𝚐 𝚏𝚘𝚕𝚕𝚘𝚠𝚒𝚗𝚐 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜.**\n\n**➩** `/setcode -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1`\n"""
     )
 
 
 async def ihelp(event):
     await event.edit(
-        """**To check current ffmpeg command you can use.**\n\n`/eval print(ffmpegcode[0])`\n\n**You can change your ffmpeg code by executing following commands.**\n\n**➩** `/setcode -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1`\n\n**Do /cmds For More**"""
+        """**𝚃𝚘 𝚌𝚑𝚎𝚌𝚔 𝚌𝚞𝚛𝚛𝚎𝚗𝚝 𝚏𝚏𝚖𝚙𝚎𝚐 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎.**\n\n`/eval print(ffmpegcode[0])`\n\n**𝚈𝚘𝚞 𝚌𝚊𝚗 𝚌𝚑𝚊𝚗𝚐𝚎 𝚢𝚘𝚞𝚛 𝚏𝚏𝚖𝚙𝚎𝚐 𝚌𝚘𝚍𝚎 𝚋𝚢 𝚎𝚡𝚎𝚌𝚞𝚝𝚒𝚗𝚐 𝚏𝚘𝚕𝚕𝚘𝚠𝚒𝚗𝚐 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜.**\n\n**➩** `/setcode -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1`\n"""
     )
