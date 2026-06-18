@@ -3,7 +3,7 @@
     "description": "A Telegram Video Encoder.",
     "logo": "https://telegra.ph/file/5cfa9e08f6d1d635d0e28.jpg",
     "keywords": ["Telegram","python", "Video","Compressor","Encoder"],
-    "repository": "https://github.com/Ujjawalnayan/Infenc",
+    "repository": "https://github.com/Ujjwal-nayan/Infenc",
     "success_url": "",
     "stack": "container",
     "env": {
